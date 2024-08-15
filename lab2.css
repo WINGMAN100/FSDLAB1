@@ -1,0 +1,54 @@
+/* External CSS for additional styles */
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+/* Borders, Padding, and Margin */
+.table {
+    color: white;
+    margin-top: 20px;
+}
+
+img {
+    border: 5px solid #343a40;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Background Image */
+body {
+    background-image: url('back.webp');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
