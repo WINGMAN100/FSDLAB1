@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="lab2.css">
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .form-container {
+            padding: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Student Portal by Siddhant Guha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Registration Form -->
+    <div class="container form-container">
+        <h2>Student Registration</h2>
+        <form action="#" method="POST">
+            <!-- Inline CSS Example -->
+            <div class="form-group">
+                <label for="studentName" style="color: #007bff;">Student Name:</label>
+                <input type="text" class="form-control" id="studentName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select class="form-control" id="course">
+                    <option>B.Sc Computer Science</option>
+                    <option>B.Com</option>
+                    <option>B.A Economics</option>
+                    <option>M.Sc Physics</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- Links and Image Section -->
+<div class="container">
+    <h3 style="color: white;">Useful Links</h3>
+    <ul>
+        <li><a href="https://www.mitwpu.edu.in" target="_blank">University Website</a></li>
+        <li><a href="https://www.mitwpu.edu.in" target="_blank">Course Catalog</a></li>
+    </ul>
+
+    <!-- Image -->
+    <img src="univer.webp" alt="University Image" class="img-fluid">
+
+    <!-- Table -->
+    <h3 style="color: white;">Course Details</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Duration</th>
+                <th>Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B.Sc Computer Science</td>
+                <td>3 Years</td>
+                <td>250000 rs</td>
+            </tr>
+            <tr>
+                <td>B.Com</td>
+                <td>3 Years</td>
+                <td>180000 rs</td>
+            </tr>
+            <tr>
+                <td>B.A Economics</td>
+                <td>3 Years</td>
+                <td>150000 rs</td>
+            </tr>
+            <tr>
+                <td>M.Sc Physics</td>
+                <td>2 Years</td>
+                <td>80000 rs</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Student Registration System</p>
+    </div>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
